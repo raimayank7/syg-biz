@@ -1,0 +1,23 @@
+
+.bz label{display:block;font-weight:600;font-size:.92rem;margin-bottom:4px}
+.bz input[type=number],.bz input[type=text],.bz input[type=tel],.bz input[type=date],.bz input[type=time],.bz select,.bz textarea{width:100%;min-height:46px;padding:10px 12px;font:inherit;font-size:1rem;color:var(--ink);background:var(--field);border:1px solid var(--field-line);border-radius:10px}
+.bz textarea{min-height:92px;resize:vertical}
+.bz .big{font-size:1.9rem;font-weight:800;line-height:1.15}
+.bz-n{font-family:var(--mono);white-space:nowrap}td.bz-n,th.bz-n{text-align:right}
+.bz-two{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
+.bz-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.bz-tabs button{min-height:42px;padding:8px 16px;border-radius:99px;border:1px solid var(--line);background:var(--surface);color:var(--ink);font:600 .95rem var(--font);cursor:pointer}
+.bz-tabs button[aria-pressed=true]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.bz input[type=checkbox]{width:24px;height:24px;flex:none}
+.bz-warn{background:var(--surface2);border-left:4px solid #d9822b;border-radius:8px;padding:10px 14px;margin:12px 0}
+.bz-row{display:grid;gap:8px;grid-template-columns:2fr 1fr auto;align-items:end;margin:8px 0}
+.bz-row .btn{min-height:46px}
+tr.bz-total td{font-weight:700;border-top:2px solid var(--line)}
+.bz-links{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(min(100%,240px),1fr));list-style:none;padding:0;margin:14px 0}
+.bz-links a{display:block;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--ink);text-decoration:none;min-height:44px}
+.bz-links a b{display:block}.bz-links a span{font-size:.9rem;color:var(--muted)}
+.msg{white-space:pre-line}
+@media(max-width:560px){.bz-row{grid-template-columns:1fr}}
+@media print{body.print-receipt>*:not(#bz-receipt){display:none!important}body.print-receipt{background:#fff}#bz-receipt{display:block!important}}
+#bz-receipt{display:none}
+.bz-sheet{overflow-x:auto}.bz-sheet table{border-collapse:collapse;width:100%}.bz-sheet th,.bz-sheet td{border:1px solid #888;padding:4px 6px;font-size:.85rem}
